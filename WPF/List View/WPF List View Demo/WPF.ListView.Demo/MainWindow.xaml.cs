@@ -22,11 +22,11 @@ namespace WPF.ListView.Demo
             {
                 Employees = new ObservableCollection<Employee>
                 {
-                    new Employee { ID = 1, Name = "Employee One", Role = "Technical Team Lead" },
-                    new Employee { ID = 2, Name = "Employee Two", Role = "Senior Software Developer" },
-                    new Employee { ID = 3, Name = "Employee Three", Role = "Software Developer" },
-                    new Employee { ID = 4, Name = "Employee Four", Role = "Software Developer" },
-                    new Employee { ID = 5, Name = "Employee Five", Role = "Quality Assurance" },
+                    new Employee { ID = 1, Name = "Kunal Chowdhury", Role = "Technical Team Lead" },
+                    new Employee { ID = 2, Name = "Ranjit Sahoo", Role = "Senior Software Developer" },
+                    new Employee { ID = 3, Name = "Sukomal Biswas", Role = "Software Developer" },
+                    new Employee { ID = 4, Name = "Prasenjit Sengupta", Role = "Software Developer" },
+                    new Employee { ID = 5, Name = "Ramesh Muthaiya", Role = "Quality Assurance" },
                 };
             };
         }
