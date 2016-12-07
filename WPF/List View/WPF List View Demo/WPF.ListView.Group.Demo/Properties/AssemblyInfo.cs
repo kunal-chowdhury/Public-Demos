@@ -2,11 +2,11 @@
 using System.Runtime.InteropServices;
 using System.Windows;
 
-[assembly: AssemblyTitle("WPF.ListView.Demo")]
+[assembly: AssemblyTitle("WPF.ListView.Group.Demo")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("www.kunal-chowdhury.com")]
-[assembly: AssemblyProduct("WPF.ListView.Demo")]
+[assembly: AssemblyProduct("WPF.ListView.Group.Demo")]
 [assembly: AssemblyCopyright("Copyright © 2016, Kunal Chowdhury")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF.ListView.Demo", "WPF.ListView.Demo\WPF.ListView.Demo.csproj", "{11E5F708-F561-4D1F-903D-0D416427D567}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF.ListView.Group.Demo", "WPF.ListView.Group.Demo\WPF.ListView.Group.Demo.csproj", "{79F66FEB-9AF3-4409-A853-994464D1111D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{11E5F708-F561-4D1F-903D-0D416427D567}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{11E5F708-F561-4D1F-903D-0D416427D567}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{11E5F708-F561-4D1F-903D-0D416427D567}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79F66FEB-9AF3-4409-A853-994464D1111D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79F66FEB-9AF3-4409-A853-994464D1111D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79F66FEB-9AF3-4409-A853-994464D1111D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79F66FEB-9AF3-4409-A853-994464D1111D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

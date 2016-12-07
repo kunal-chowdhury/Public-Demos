@@ -8,7 +8,7 @@
                 <GridView>
                     <GridViewColumn Header="ID" DisplayMemberBinding="{Binding ID}" Width="50"/>
                     <GridViewColumn Header="Name" DisplayMemberBinding="{Binding Name}" Width="220"/>
-                    <GridViewColumn Header="Designation" DisplayMemberBinding="{Binding Role}" Width="200"/>
+                    <GridViewColumn Header="Role" DisplayMemberBinding="{Binding Role}" Width="200"/>
                 </GridView>
             </ListView.View>
         </ListView>

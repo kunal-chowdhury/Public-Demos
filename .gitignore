@@ -1,0 +1,8 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/WPF/List View/WPF List View Demo/WPF.ListView.Group.Demo/obj/Debug
+/WPF/List View/WPF List View Demo/WPF.ListView.Group.Demo/bin/Debug
+/WPF/List View/WPF List View Demo/WPF.ListView.Demo/obj/Debug
+/WPF/List View/WPF List View Demo/WPF.ListView.Demo/bin/Debug
