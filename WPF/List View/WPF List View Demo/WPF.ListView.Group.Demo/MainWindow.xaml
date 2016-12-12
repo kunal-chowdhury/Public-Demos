@@ -7,6 +7,26 @@
         <ListView ItemsSource="{Binding Employees, ElementName=window}">
             <ListView.Resources>
                 <converters:CollectionViewGroupToFieldConverter x:Key="CollectionViewGroupToFieldConverter"/>
+
+                <ControlTemplate x:Key="GroupItemTemplate">
+                    <Expander IsExpanded="False" VerticalAlignment="Bottom" VerticalContentAlignment="Bottom">
+                        <!-- Header Panel of the Expander control -->
+                        <Expander.Header>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="{Binding Converter={StaticResource CollectionViewGroupToFieldConverter}}" 
+                                            FontWeight="Bold" Foreground="Gray" FontSize="20"/>
+                                <TextBlock Text="{Binding ItemCount}" 
+                                            Foreground="Green" FontWeight="Bold" FontStyle="Italic" FontSize="20"
+                                            Margin="4,0,0,0"/>
+                                <TextBlock Text=" employee(s)" 
+                                            Foreground="Silver" FontStyle="Italic" FontSize="20"/>
+                            </StackPanel>
+                        </Expander.Header>
+                        
+                        <!-- Items panel to hold items inside the Expander control -->
+                        <ItemsPresenter />
+                    </Expander>
+                </ControlTemplate>
             </ListView.Resources>
             
             <ListView.View>
@@ -21,22 +41,7 @@
                 <GroupStyle>
                     <GroupStyle.ContainerStyle>
                         <Style TargetType="{x:Type GroupItem}">
-                            <Setter Property="Template">
-                                <Setter.Value>
-                                    <ControlTemplate>
-                                        <Expander IsExpanded="False" VerticalAlignment="Bottom" VerticalContentAlignment="Bottom">
-                                            <Expander.Header>
-                                                <StackPanel Orientation="Horizontal">
-                                                    <TextBlock Text="{Binding Converter={StaticResource CollectionViewGroupToFieldConverter}}" FontWeight="Bold" Foreground="Gray" FontSize="20"/>
-                                                    <TextBlock Text="{Binding ItemCount}" Foreground="Green" FontWeight="Bold" FontStyle="Italic" Margin="4,0,0,0" FontSize="20"/>
-                                                    <TextBlock Text=" employee(s)" Foreground="Silver" FontStyle="Italic" FontSize="20"/>
-                                                </StackPanel>
-                                            </Expander.Header>
-                                            <ItemsPresenter />
-                                        </Expander>
-                                    </ControlTemplate>
-                                </Setter.Value>
-                            </Setter>
+                            <Setter Property="Template" Value="{StaticResource GroupItemTemplate}"/>
                         </Style>
                     </GroupStyle.ContainerStyle>
                 </GroupStyle>
